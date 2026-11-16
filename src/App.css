@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333333;
+  background-color: #f8fafc;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Landing page hero */
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(10, 30, 20, 0.65), rgba(5, 20, 15, 0.75)), url('/images/landing-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.landing-content-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.hero-box {
+  text-align: center;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.brand-badge {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.25);
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  color: #a7f3d0;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.company-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 12px;
+}
+
+.company-tagline {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #d1fae5;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.company-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.get-started-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 16px 42px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.45);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.get-started-button:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.6);
+}
+
+.get-started-button:active {
+  transform: translateY(0);
+}
+
+.product-list-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .company-title {
+    font-size: 2.3rem;
+  }
+  .company-tagline {
+    font-size: 1.1rem;
+  }
+  .company-intro {
+    font-size: 0.95rem;
+  }
+  .get-started-button {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}
